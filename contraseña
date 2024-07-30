@@ -1,0 +1,11 @@
+import random
+contra = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+large = int(input("Introduce la longitud de la contraseña: "))
+
+new_contra = ""
+
+for i in range(large):
+    new_contra += random.choice(contra)
+    
+print("La contra es...", new_contra)
